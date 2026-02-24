@@ -1,0 +1,207 @@
+{
+  "watch_features": {
+    "Brand": "Rolex",
+    "Movement": "Automatic",
+    "Case material": "Steel",
+    "Bracelet material": "Steel",
+    "Year of production": 2020,
+    "Condition": "Used (Very good)",
+    "Scope of delivery": "Original box, original papers",
+    "Gender": "Men's watch/Unisex",
+    "Availability": "Item is in stock",
+    "Shape": "Circular",
+    "Face Area": 650.0,
+    "Crystal": "Sapphire crystal",
+    "Dial": "Black",
+    "Bracelet color": "Steel",
+    "Watches Sold by the Seller": 500,
+    "Active listing of the seller": 100,
+    "Fast Shipper": 1,
+    "Trusted Seller": 1,
+    "Punctuality": 1,
+    "Seller Reviews": 400,
+    "age": 6,
+    "is_modern": 1,
+    "seller_reputation_score": 1.0,
+    "scope_score": 3,
+    "price_anomaly_low": 0,
+    "price_anomaly_high": 0,
+    "seller_consistent": 1
+  },
+  "predictions": {
+    "price_future": 9761.31640625,
+    "price_log": 9.186285018920898,
+    "investment_class": "Risqué",
+    "class_probabilities": {
+      "Risqué": 0.1075360467068811,
+      "Moyen": 0.29981397871928106,
+      "Bon investissement": 0.592649974573838
+    }
+  },
+  "shap_explanation": {
+    "base_value": 7.5877438,
+    "prediction": 9.186285018920898,
+    "top_positive_features": [
+      {
+        "index": 379,
+        "name": "Brand_Rolex",
+        "shap_value": 0.9187662601470947,
+        "abs_impact": 0.9187662601470947
+      },
+      {
+        "index": 490,
+        "name": "Movement_Quartz",
+        "shap_value": 0.26493754982948303,
+        "abs_impact": 0.26493754982948303
+      },
+      {
+        "index": 3,
+        "name": "Watches Sold by the Seller",
+        "shap_value": 0.21596859395503998,
+        "abs_impact": 0.21596859395503998
+      },
+      {
+        "index": 545,
+        "name": "Condition_Used (Very good)",
+        "shap_value": 0.21570587158203125,
+        "abs_impact": 0.21570587158203125
+      },
+      {
+        "index": 6,
+        "name": "seller_reputation_score",
+        "shap_value": 0.10158485919237137,
+        "abs_impact": 0.10158485919237137
+      }
+    ],
+    "top_negative_features": [
+      {
+        "index": 507,
+        "name": "Case material_Steel",
+        "shap_value": -0.15354454517364502,
+        "abs_impact": 0.15354454517364502
+      },
+      {
+        "index": 12,
+        "name": "seller_consistent",
+        "shap_value": -0.06527626514434814,
+        "abs_impact": 0.06527626514434814
+      },
+      {
+        "index": 5,
+        "name": "Seller Reviews",
+        "shap_value": -0.03162029758095741,
+        "abs_impact": 0.03162029758095741
+      },
+      {
+        "index": 504,
+        "name": "Case material_Rose gold",
+        "shap_value": -0.01794879510998726,
+        "abs_impact": 0.01794879510998726
+      },
+      {
+        "index": 42,
+        "name": "Brand_Audemars Piguet",
+        "shap_value": -0.015347514301538467,
+        "abs_impact": 0.015347514301538467
+      }
+    ],
+    "all_features": [
+      {
+        "index": 379,
+        "name": "Brand_Rolex",
+        "shap_value": 0.9187662601470947,
+        "abs_impact": 0.9187662601470947
+      },
+      {
+        "index": 490,
+        "name": "Movement_Quartz",
+        "shap_value": 0.26493754982948303,
+        "abs_impact": 0.26493754982948303
+      },
+      {
+        "index": 3,
+        "name": "Watches Sold by the Seller",
+        "shap_value": 0.21596859395503998,
+        "abs_impact": 0.21596859395503998
+      },
+      {
+        "index": 545,
+        "name": "Condition_Used (Very good)",
+        "shap_value": 0.21570587158203125,
+        "abs_impact": 0.21570587158203125
+      },
+      {
+        "index": 507,
+        "name": "Case material_Steel",
+        "shap_value": -0.15354454517364502,
+        "abs_impact": 0.15354454517364502
+      },
+      {
+        "index": 6,
+        "name": "seller_reputation_score",
+        "shap_value": 0.10158485919237137,
+        "abs_impact": 0.10158485919237137
+      },
+      {
+        "index": 7,
+        "name": "scope_score",
+        "shap_value": 0.10136586427688599,
+        "abs_impact": 0.10136586427688599
+      },
+      {
+        "index": 561,
+        "name": "Crystal_Sapphire crystal",
+        "shap_value": 0.06848189979791641,
+        "abs_impact": 0.06848189979791641
+      },
+      {
+        "index": 12,
+        "name": "seller_consistent",
+        "shap_value": -0.06527626514434814,
+        "abs_impact": 0.06527626514434814
+      },
+      {
+        "index": 0,
+        "name": "Year of production",
+        "shap_value": 0.056439269334077835,
+        "abs_impact": 0.056439269334077835
+      }
+    ]
+  },
+  "lime_explanation": {
+    "predicted_class": "Bon investissement",
+    "confidence": 0.002692963265668258,
+    "key_factors": [
+      {
+        "feature": "Brand",
+        "value": "Rolex",
+        "impact": 0.08333634199432766,
+        "direction": "positive"
+      },
+      {
+        "feature": "Availability",
+        "value": "Item is in stock",
+        "impact": -0.03139263070375545,
+        "direction": "negative"
+      },
+      {
+        "feature": "Crystal",
+        "value": "Sapphire crystal",
+        "impact": 0.023179619115833033,
+        "direction": "positive"
+      },
+      {
+        "feature": "Scope of delivery",
+        "value": "Original box, original papers",
+        "impact": 0.017721966392159852,
+        "direction": "positive"
+      },
+      {
+        "feature": "Dial",
+        "value": "Black",
+        "impact": -0.014293181436576121,
+        "direction": "negative"
+      }
+    ]
+  }
+}
