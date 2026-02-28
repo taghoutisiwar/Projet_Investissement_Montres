@@ -1,5 +1,5 @@
 # Week 1 – Setup, Cleaning & EDA
-_Généré le 2026-02-11 01:02_
+_Généré le 2026-02-08 04:31_
 
 ## Données
 - Brut     : **45024** lignes × **23** colonnes

@@ -1,0 +1,94 @@
+{
+  "watch_features": {
+    "Brand": "Rolex",
+    "Movement": "Automatic",
+    "Case material": "Steel",
+    "Bracelet material": "Steel",
+    "Year of production": 2020,
+    "Condition": "Used (Very good)",
+    "Scope of delivery": "Original box, original papers",
+    "Gender": "Men's watch/Unisex",
+    "Availability": "Item is in stock",
+    "Shape": "Circular",
+    "Face Area": 650.0,
+    "Crystal": "Sapphire crystal",
+    "Dial": "Black",
+    "Bracelet color": "Steel",
+    "Watches Sold by the Seller": 500,
+    "Active listing of the seller": 100,
+    "Fast Shipper": 1,
+    "Trusted Seller": 1,
+    "Punctuality": 1,
+    "Seller Reviews": 400,
+    "age": 6,
+    "is_modern": 1,
+    "seller_reputation_score": 1.0,
+    "scope_score": 3,
+    "price_anomaly_low": 0,
+    "price_anomaly_high": 0,
+    "seller_consistent": 1
+  },
+  "predictions": {
+    "price_future": 9761.31640625,
+    "price_log": 9.186285018920898,
+    "investment_class": "Risqué",
+    "class_probabilities": {
+      "Risqué": 0.1075360467068811,
+      "Moyen": 0.29981397871928106,
+      "Bon investissement": 0.592649974573838
+    }
+  },
+  "shap_explanation": {
+    "base_value": 7.5877438,
+    "top_positive_features": [
+      {
+        "feature": "Watches Sold by the Seller",
+        "impact": 0.21596859395503998
+      },
+      {
+        "feature": "seller_reputation_score",
+        "impact": 0.10158485919237137
+      },
+      {
+        "feature": "scope_score",
+        "impact": 0.10136586427688599
+      },
+      {
+        "feature": "Year of production",
+        "impact": 0.056439269334077835
+      }
+    ],
+    "top_negative_features": [
+      {
+        "feature": "seller_consistent",
+        "impact": -0.06527626514434814
+      }
+    ]
+  },
+  "lime_explanation": {
+    "top_label": 2,
+    "confidence": 0.0022760157196332065,
+    "key_factors": [
+      {
+        "feature": "Availability=1",
+        "impact": 0.03577923006365113
+      },
+      {
+        "feature": "Movement=0",
+        "impact": -0.025078562271689465
+      },
+      {
+        "feature": "Fast Shipper",
+        "impact": -0.016425864314972307
+      },
+      {
+        "feature": "Bracelet color=15",
+        "impact": -0.013752116629228308
+      },
+      {
+        "feature": "Brand=215",
+        "impact": 0.012045572035839116
+      }
+    ]
+  }
+}

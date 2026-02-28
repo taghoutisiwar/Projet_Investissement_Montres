@@ -1,0 +1,12 @@
+# Environnement virtuel Python
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/*
+# MLflow models (trop gros)
+mlruns/*/models/
+*.pkl

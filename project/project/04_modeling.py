@@ -20,17 +20,6 @@ from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 import warnings
 warnings.filterwarnings('ignore')
 
-# Configuration MLflow - LOCAL (résout WinError 5)
-BASE_DIR = Path(__file__).resolve().parent.parent
-MLRUNS_DIR = BASE_DIR / "mlruns"
-MLRUNS_DIR.mkdir(exist_ok=True)
-
-# Utiliser le répertoire local au lieu de SQLite
-mlflow.set_tracking_uri(f"file:///{MLRUNS_DIR.as_posix()}")
-mlflow.set_experiment("watch_price_prediction")
-
-print(f"📁 MLflow tracking: {MLRUNS_DIR}")
-print(f"💡 Commande pour l'interface: mlflow ui --backend-store-uri file:///{MLRUNS_DIR.as_posix()}")
 try:
     import xgboost as xgb
     XGBOOST_AVAILABLE = True
@@ -298,7 +287,7 @@ def train_single_model(model_name, X_train, y_train, X_test, y_test, num_feature
     pipeline = create_pipeline(config, num_features, cat_features)
     
     # MLflow
-    ##mlflow.set_experiment("Luxury_Watch_Price_Prediction")
+    mlflow.set_experiment("Luxury_Watch_Price_Prediction")
     
     with mlflow.start_run(run_name=f"{config['name']}_Price_Prediction"):
         

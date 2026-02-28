@@ -21,19 +21,6 @@ import sys
 
 warnings.filterwarnings('ignore')
 
-
-# Configuration MLflow - LOCAL
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-MLRUNS_DIR = PROJECT_ROOT / "mlruns"
-MLRUNS_DIR.mkdir(exist_ok=True)
-
-mlflow.set_tracking_uri(f"file:///{MLRUNS_DIR.as_posix()}")
-print(f"📁 MLflow tracking: {MLRUNS_DIR}")
-
-mlflow.set_experiment("classification_investissement_montres")
-
-
-
 try:
     import xgboost as xgb
     XGBOOST_AVAILABLE = True
@@ -189,8 +176,8 @@ def get_classifier_config(model_name):
         'gradient_boosting': {
             'name': 'GradientBoosting',
             'model': GradientBoostingClassifier(
-                n_estimators=50,
-                max_depth=3,
+                n_estimators=150,
+                max_depth=5,
                 learning_rate=0.1,
                 random_state=RANDOM_STATE
             ),
@@ -304,7 +291,7 @@ def train_single_classifier(model_name, X_train, y_train, X_test, y_test, roi_te
     
     pipeline = create_classifier_pipeline(config, num_features, cat_features)
     
-    ##mlflow.set_experiment("Luxury_Watch_Investment_Classification")
+    mlflow.set_experiment("Luxury_Watch_Investment_Classification")
     
     with mlflow.start_run(run_name=f"{config['name']}_Classifier"):
         
